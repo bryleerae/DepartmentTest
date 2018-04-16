@@ -1,0 +1,67 @@
+
+public class DepartmentTest {
+
+	public static void main(String[] args) {
+	
+		//create employee array for departments
+		BasePlusCommissionEmployee[] onlineSalesEmp = 
+			new BasePlusCommissionEmployee[4];
+		CommissionEmployee[] brickAndMortarSalesEmp = 
+			new CommissionEmployee[4];
+		
+		//create two departments
+		Department onlineSales = new Department(
+				"onlineSales", "775");
+		Department brickAndMortarSales = new Department(
+				"brickAndMortorSales", "123");
+		
+		//create Brick and Mortar employees
+		CommissionEmployee emp1 = new CommissionEmployee("Brylee", 
+				"Despinis", "888-88-8888", 956, .98, "DY67");
+		CommissionEmployee emp2 = new CommissionEmployee("Karma", 
+				"Ze-Cat", "888-88-8887", 956, .98, "DY68");
+		CommissionEmployee emp3 = new CommissionEmployee("Josh", 
+				"Despinis", "888-88-8886", 956, .98, "DY69");
+		CommissionEmployee emp4 = new CommissionEmployee("Jenna", 
+				"Tate", "888-88-8885", 956, .98, "DY70");
+		
+		//fill Brick and Mortar emp array
+		brickAndMortarSalesEmp[0] = emp1;
+		brickAndMortarSalesEmp[1] = emp2;
+		brickAndMortarSalesEmp[2] = emp3;
+		brickAndMortarSalesEmp[3] = emp4;
+
+		//create online employees
+		BasePlusCommissionEmployee emp01 = 
+			new BasePlusCommissionEmployee("Rhonda", 
+				"Despinis", "888-88-8888", 956, .98, "DY67", 708);
+		BasePlusCommissionEmployee emp02 = 
+			new BasePlusCommissionEmployee("Jimmy", 
+				"Despinis", "888-88-8888", 956, .98, "DY67", 604);
+		BasePlusCommissionEmployee emp03 = 
+			new BasePlusCommissionEmployee("Daniel", 
+				"Despinis", "888-88-8888", 956, .98, "DY67", 987);
+		BasePlusCommissionEmployee emp04 = 
+			new BasePlusCommissionEmployee("Ryan", 
+				"Despinis", "888-88-8888", 956, .98, "DY67", 964);
+		
+		//fill online emp array
+		onlineSalesEmp[0] = emp01;
+		onlineSalesEmp[1] = emp02;
+		onlineSalesEmp[2] = emp03;
+		onlineSalesEmp[3] = emp04;
+
+		
+		System.out.println("Brylee Despinis. " + 
+				"Graded Programming Exercise 1.1\n");
+		
+		for(int counter = 0; counter < onlineSalesEmp.length; counter++)
+		{
+			System.out.print(onlineSalesEmp[counter] + "\n\n");
+			System.out.print(brickAndMortarSalesEmp[counter] + "\n\n");
+
+		}
+		
+	}
+
+}
