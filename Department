@@ -1,0 +1,43 @@
+
+public class Department {
+	
+	private String deptName;
+	private String deptNumber;
+	
+	// two-argument constructor
+	public Department(String deptName, String deptNumber)
+	{
+		this.deptName = deptName;
+		this.deptNumber = deptNumber;
+	}
+	
+	//return deptName
+	public String getDeptName() 
+	{
+		return deptName;
+	}
+	
+	//return deptNumber
+	public String getDeptNumber()
+	{
+		return deptNumber;
+	}
+	
+	//set deptName
+	public void setDeptName(String deptName)
+	{
+		this.deptName = deptName;
+	}
+	
+	//set deptNumber
+	public void setDeptNumber(String deptNumber)
+	{
+		this.deptNumber = deptNumber;
+	}
+	
+	/*public String toString() 
+	{
+		return String.format("")
+	}
+	*/
+}
